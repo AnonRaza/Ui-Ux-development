@@ -1,0 +1,473 @@
+/* header satrt here */
+.header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.logo h1{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+}
+.logo h1 span:first-child{
+    border: 1px solid #ddd;
+    padding: 0px 15px;
+    color: #d19c97;
+    margin-right: 5px;
+}
+.header .search{
+    margin-top: 10px;
+}
+.search input{
+    width: 500px;
+    height: 38px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 15px;
+    border-right: none;
+    margin-left: 7%;
+}
+.search button{
+    height: 40px;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-left: -3.5px;
+    color: #d19c97;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 13px;
+    font-size: 15px;
+}
+.icons{
+    text-align: right;
+}
+.icons button{
+    text-align: right;
+    padding: 8px 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #d19c97;
+    font-weight: bolder;
+    margin: 0;
+    cursor: pointer;
+}
+.icons button span i{
+    margin-right: 8px;
+}
+
+/* category style start here */
+.list-header{
+    background: #d19797;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.list-header span h4{
+    font-weight: 500;
+}
+.category ul{
+    border: 1px solid #ddd;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.category ul li{
+    padding: 8px 40px;
+    border-bottom: 1px solid #ddd;
+}
+.category ul li a{
+    text-decoration: none;
+    color: #333;
+}
+/* hero section */
+.banner{
+    display: flex;
+}
+.main{
+    display: block;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.left ul{
+    display: flex;
+}
+.left ul li{
+    list-style-type: none;
+    padding: 15px;
+}
+.left ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+.left ul li :hover{
+    color: #d19797;
+}
+.left ul .dropdown{
+    position: relative;
+}
+.dropdown:hover .inner-drop{
+    display: block;
+    position: absolute;
+    left: -16%;    
+}
+
+ul .inner-drop{
+    display: none;
+}
+ul .inner-drop li{
+    padding: 5px;
+    color: white;
+}
+
+.right ul{
+    display: flex;
+    list-style-type: none;
+}
+.right ul li{
+    padding: 15px 5px 15px 15px;
+}
+.right ul li a{
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+}
+.right ul li a:hover{
+    color: #d19797;
+}
+
+/* hero section */
+.main .hero{
+    margin-left: 4.5%;
+    height: 500px;
+    background-image: url("./images/OIG.jpg"), linear-gradient(rgba(17, 16, 16, 0.5),rgba(34, 32, 32, 0.5)); 
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero p{
+    font-size: 25px;
+}
+.hero h1{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.hero button{
+    padding: 8px 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    color: #333;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.hero button:hover{
+    color: #d19797;
+}
+
+
+
+/* app features */
+.features{
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-between;
+}
+.features .feat{
+    width: 20%;
+    border: 1px solid #ddd;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.features .feat i{
+    color: #d19797;
+    font-size: 25px;
+    margin-right: 18px;
+}
+
+/* cards */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    height: 415px;
+    margin: 40px 0px;
+    padding: 10px;
+    align-items: center;
+}
+.cards .card .count{
+    text-align: right;
+    padding: 10px;
+    width: 100%;
+}
+.cards .card .product-name{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+
+}
+.cards .card img{
+    height: 80%;
+    width: 100%;
+}
+
+/* offers */
+.offers{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+.offer{
+    background: #edf1ff;
+    display: flex;
+    width: 45%;
+    border: 1px solid #ddd;
+    height: 250px;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+.offer img{
+    width: 32%;
+    height: 100%;
+}
+.offer .offer-text{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.offer .offer-text h4{
+    color: #d19797;
+    margin-right: 10%;
+}
+.offer .offer-text h1{
+    font-size: 28px;
+    margin: 5px 0px 40px 0px;
+}
+.offer .offer-text button{
+    background: transparent;
+    border: 1px solid #d19797;
+    color: #d19797;
+    padding: 10px 25px;
+}
+
+
+/* trandy */
+.trends{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.trends .trend{
+    width: 20%;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    align-items: center;
+    margin: 80px 0px;
+
+}
+.trend img{
+    height: 67%;
+}
+.trend .trend-details{
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.trend-details .name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.trend-details .price{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 5px 28%;
+
+}
+.trend-details .price h6{
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.trend-details .price h6:nth-child(2){
+   text-decoration: line-through;
+   font-weight: 300;
+
+}
+.trend-cart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: space-evenly;
+    background: #f5f3f3;
+}
+.trend-cart .cart-detail a,.cart-add a{
+    color: #d19797;
+    cursor: pointer;
+}
+.trend-cart .cart-detail span,.cart-add span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.trends .trend-head h1{
+     
+        position: absolute;
+        left: 40%;
+}
+      
+.trends .trend-head h1:before, .trends .trend-head h1:after{
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
+   
+
+/* subscribe */
+.subscribe{
+    height: 300px;
+    background: #edf1ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.subscribe p{
+    width: 700px;
+    margin: 30px 0px 15px 0px;
+    text-align: center;
+}
+.subscribe .mail input{
+    width: 500px;
+    outline: none;
+    padding: 10px;
+    border: none;
+    background: #ffffffff;
+    margin: 0;
+    font-size: 16px;
+}
+.subscribe .mail button{
+    padding: 12px 25px;
+    background: #d19797;
+    border: none;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+/* footer  */
+footer{
+    display: flex;
+    height: 270px;
+    background: #edf1ff;
+    margin-top: 10px;
+    align-items: flex-start;
+    padding: 30px 0px 0px 0px;
+}
+footer .info h1{
+        font-size: 30px;
+        margin: 0;
+        font-weight: 600;
+}
+footer .info h1 span:first-child{
+        border: 1px solid #ffffffff;
+        padding: 0px 15px;
+        color: #d19c97;
+        margin-right: 5px;
+}
+.info{
+    padding: 0px 0px 0px 20px;
+}
+.info .exp{
+    width: 100%;
+    margin: 8px 0px;
+}
+.info,.q-links,.news-letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loc,.msg,.cal{
+    display: flex;
+    margin: 3px 0px;
+}
+.loc i,.msg i,.cal i{
+    padding: 4px 18px 0px 0px;
+    color: #d19797;
+}
+.q-links{
+    align-items: center;
+}
+.news-letter{
+    align-items: center;
+}
+.q-links h4{
+    padding: 10px 0px 10px 3px;
+}
+.q-links ul li{
+    list-style-type: none;
+    padding: 0px 0px;
+}
+.q-links ul li::before{
+    content: '▶';
+}
+.q-links ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 5px;
+}
+.news-letter h4{
+    text-align: left;
+    padding: 10px;
+    margin-right: 33%;
+}
+.news-letter input{
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    border: none;
+    background: #ffffffff;
+    margin: 8px 0px;
+    font-size: 16px;
+}
+.news-letter button{
+    padding: 12px 25px;
+    background: #d19797;
+    border: none;
+    cursor: pointer;
+    width: 55%;
+    margin: 8px 0px;
+}

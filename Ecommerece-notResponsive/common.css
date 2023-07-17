@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Poltawski+Nowy:wght@500&family=Poppins:wght@100;300;400;500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    margin: 0px 5%;
+}
+.width-25{
+    width: 25%;
+}
+.width-50{
+    width: 50%;
+}
+.width-75{
+    width: 75%;
+}
+.line{
+    border-top: 1px solid #ddd;
+}
+.flip{
+    transform: scaleX(-1);
+}
