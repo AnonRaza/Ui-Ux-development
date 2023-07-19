@@ -14,13 +14,16 @@ const images = document.querySelectorAll(".images img")
 const next_btn = document.querySelector(".next-btn");
 const prev_btn = document.querySelector(".prev-btn");
 
-
+const links = document.querySelectorAll(".nav-link");
+const toggle_btn = document.querySelector(".toggle-btn")
+const hamburger = document.querySelector(".hamburger")
 
 
 
 
 
 window.addEventListener("scroll", ()=>{
+    activeLink();
    if(!skillPlayed)  skillsCounter();
    if(!mlPlayed) mlCounter();
 })
@@ -161,3 +164,102 @@ function changeImage(index){
     })
     images[index].classList.add("showImage")
 }
+
+
+// swiper 
+const swiper = new Swiper('.swiper', {
+ 
+    loop: true,
+    speed:500,
+    autoplay:true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+     
+    },
+  
+   
+  });
+
+
+  function activeLink(){
+    let sections = document.querySelectorAll("section[id]");
+    let passedSections = Array.from(sections).map((sct,i) => {
+        return{
+            y: sct.getBoundingClientRect().top - header.offsetHeight,
+            id:i,
+        };
+    })
+    .filter((sct) => sct.y <= 0);
+    let currSectionID = passedSections.at(-1).id;
+
+
+    links.forEach((l) => l.classList.remove("active"));
+    links[currSectionID].classList.add("active");
+
+  }
+
+  activeLink();
+
+
+
+//   theme change 
+
+let firstTheme = localStorage.getItem("dark");
+
+changeTheme(+firstTheme);
+
+
+function changeTheme(isDark){
+    if(isDark){
+        document.body.classList.add("dark");
+        toggle_btn.classList.replace("uil-moon","uil-sun")
+        localStorage.setItem("dark",1);
+    }
+    else{
+        document.body.classList.remove("dark");
+        toggle_btn.classList.replace("uil-sun","uil-moon")
+        localStorage.setItem("dark",0);
+
+    }
+}
+
+
+toggle_btn.addEventListener("click",()=>{
+    changeTheme(!document.body.classList.contains("dark"));
+})
+
+
+// hamburger
+
+hamburger.addEventListener("click", ()=>{
+    document.body.classList.toggle("open");
+    document.body.classList.toggle("stopScrolling");
+
+})
+
+links.forEach((link)=> 
+    link.addEventListener("click",()=>{
+        document.body.classList.remove("open");
+        document.body.classList.remove("stopScrolling");
+    })
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
