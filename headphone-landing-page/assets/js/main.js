@@ -74,3 +74,23 @@ function scrollActive(){
 
 }
 window.addEventListener('scroll',scrollActive)
+
+
+
+
+// scroll reveal animation 
+const sr = ScrollReveal({
+    distance : '60px',
+    duration : 2500,
+    delay : 400,
+})
+
+sr.reveal(`.home_header, .section_title`, {dealy : 600})
+sr.reveal(`.home_footer`, {dealy : 700})
+sr.reveal(`.home_img`, {dealy : 900, origin:'top'})
+
+sr.reveal(`.sponsor_img, .products_card, .footer_logo, .footer_content, .footer_copy`, {interval:100 , origin:'top'})
+sr.reveal(`.specs_data, .discount_animate`, {interval:100 , origin:'left'})
+sr.reveal(`.specs_img, .discount_img`, {origin:'right'})
+sr.reveal(`.case_img`, {origin:'top'})
+sr.reveal(`.case_data`)
