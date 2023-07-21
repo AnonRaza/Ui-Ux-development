@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+@font-face {
+    font-family: a;
+    src: url(./jost-variable.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+}
+
+
+
+
+
+/* common classes  */
+.btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #0b48ed;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: a;
+    font-size: 15px;
+}
+.page_title{
+    font-family: a;
+    font-size: 6vw;
+    font-weight: lighter;
+    line-height: 1;
+    color: #fff;
+}
+
+
+/* page1  styling start here  */
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.page1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav_btn{
+    margin-right: 10px;
+}
+
+.page1>nav{
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
+}
+.page1>nav>img{
+    width: 13%;
+    margin-top: -40px;
+}
+.page1_data{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    height: 45vh;
+    width: 50vw;
+}
+.page1_detail{
+    display: flex;
+    align-items: center;
+    font-family: a;
+    padding: 0 23% 0 0;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+}
+.detail_btn{
+    height: inherit;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    color: #0b48ed;
+    font-size: 16px;
+    font-family: b;
+    font-weight: 100;
+}
+.page_desc{
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+
+/* page2 goes here  */
+.page2,
+.page4,
+.page6{
+     background: #0a3cce;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: a;
+    justify-content: center;
+    color: #fff;
+    padding: 0vw 8vw;
+}
+.page2>h3,
+.page4>h3,
+.page6>h3{
+    font-weight: 100;
+    margin-bottom: 3vw;
+}
+.page2>h1,
+.page4>h1,
+.page6>h1{
+    font-weight: 100;
+    line-height: 1.3;
+    width: 90%;
+    font-size: 4vw;
+    color: #dadada69;
+}
+
+
+/* page 3 start here  */
+.page3,
+.page5,
+.page7{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.page3>canvas,
+.page5>canvas,
+.page7>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.page7{
+    background: #0a3cce;
+}
+.page7-cir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 9;
+}
+.page7-cir2{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.page8{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #0a3cce;
+}
+.page8>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page8-bottom{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.page8-bottom>h1{
+    color: #fff;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    font-weight: 100;
+}
+.page8-bottom>button{
+    color: #0a3cce;
+    background: #fff;
+}
+.page9{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #0a3cce;
+}
+.left9{
+    height: 100%;
+    width: 35%;
+    position: relative;
+    font-family: a;
+}
+.left9>h1{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1;
+}
+.right9{
+    height: 100%;
+    width: 65%;
+    position: relative;
+}
+.right9-center{
+    height: 60%;
+    width: 75%;
+    background: #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    left: 5%;
+}
+
+.page10{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #0a3cce;
+}
+.right10{
+    height: 100%;
+    width: 65%;
+    position: relative;
+    left: 35%;
+}
+.right10-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 33.3%;
+    font-family: a;
+    color: #fff;
+}
+.right10-data>h1{
+    font-size: 2vw;
+}
+.right10-data>p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    width: 80%;
+}
+
+
+.page11{
+    position: relative;
+    width: 100vw;
+    height: 110vh;
+    background: #fff;
+    font-family: a;
+}
+.page11>h1{
+    top: 5%;
+    left: 10%;
+    position: absolute;
+    color: #000;
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+.page11-data{
+    display: flex;
+    top: 18%;
+    position: relative;
+    margin-bottom: 2vw;
+    height: 23%;
+    width: 100%;
+}
+.left11{
+    position: relative;
+    height: 100%;
+    width: 35%;
+    left: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.right11{
+    position: absolute;
+    left: 48%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    color: #000;
+    flex-direction: column;
+    justify-content: center;
+}
+.left11>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right11>h4{
+    font-weight: 100;
+}
+.right11>h1{
+    font-size: 2vw;
+}
+
+.page12{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #02268e;
+}
+.page12-data{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    color: #fff;
+    font-family: a;
+}
+.page12-data>h1{
+    font-size: 5vw;
+    font-weight: 100;
+}
+.page12-data>p{
+    font-size: 1.3vw;
+}
+.page13{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+    font-family: a;
+    padding: 5vw 10vw;
+}
+.page13>h1{
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 100;
+}
+.footer-btn{
+    padding: 18px 30px;
+    border: none;
+    background-color: #0a3cce;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 2vw;
+}
+.page14{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background: #000;
+}
+.page14-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+    font-family: a;
+    width: 100%;
+    height: 33.3%;
+    color: #fff;
+    border-top: .2px solid #dfd6d6;
+}
+.page14-data:last-child{
+    border-bottom: .2px solid #dfd6d6;
+}
+.page14-data>i{
+    font-size: 2.5vw;
+    font-weight: 100;
+    z-index: 1;
+}
+.page14-data>h1{
+    font-size: 3vw;
+    font-weight: 100;
+    z-index: 1;
+}
+.center14{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background: #0a3cce;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    transition: all ease .5s;
+}
+.page14-data:hover .center14{
+    height: 100%;
+}
